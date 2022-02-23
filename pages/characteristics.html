@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript</h1>
+        <nav>
+            <a href="../index.html" class="links">Sua História</a>
+            <a href="#" class="links">Características</a>
+            <a href="utilitys.html" class="links">Utilidades</a>
+            <a href="examples.html" class="links">Exemplos</a>
+        </nav>
+    </header> 
+    
+    <main>
+        <article>
+            <h1>Características</h1>
+
+            <p>As seguintes características são comuns a todas as implementações em conformidade com o ECMAScript, a menos que esteja explicitamente especificado ao contrário.</p>
+
+            <h2>Suporte universal</h2>
+
+            <p>Todos os navegadores da Web modernos e populares suportam JavaScript com interpretadores integrados.</p>
+
+            <h2>Imperativa e Estruturada</h2>
+
+            <p>JavaScript suporta os elementos de sintaxe de programação estruturada da linguagem C como, por exemplo, <code>if</code>, <code>while</code>, <code>switch</code>. Uma exceção é a questão do escopo: o escopo em blocos ao estilo do C não é suportado. Em seu lugar, JavaScript utiliza escopo a nível de função. JavaScript 1.7, entretanto, suporta escopo a nível de bloco através do comando let. Como C, JavaScript faz distinção entre expressões e comandos. Uma diferença sintática do C é que a quebra de linha termina automaticamente o comando, sendo o ponto-e-vírgula opcional ao fim de uma instrução.</p>
+
+            <h1 class="h1-special">Dinâmica</h1>
+
+            <h2>Tipagem dinâmica</h2>
+
+            <p>Como na maioria das linguagens de script, tipos são associados com valores, não com variáveis. Por exemplo, a variável x poderia ser associada a um número e mais tarde associada a uma ''string''. JavaScript suporta várias formas de testar o tipo de um objeto, incluindo duck typing.</p>
+
+            <h2>Baseada em objetos</h2>
+
+            <p>JavaScript é quase inteiramente baseada em objetos[carece de fontes]. Objetos JavaScript são arrays associativos, aumentados com protótipos. Os nomes da propriedade de um objeto são strings: <code>obj.x = 10</code> e <code>obj["x"] = 10</code> são equivalentes, o ponto neste exemplo é apenas sintático. Propriedades e seus valores podem ser adicionadas, mudadas, ou deletadas em tempo de execução. A maioria das propriedades de um objeto (e aqueles em sua cadeia de herança via protótipo) pode ser enumerada usando-se uma estrutura de repetição for...in. JavaScript possui um pequeno número de objetos padrão da linguagem como window e document.</p>
+
+            <h2>Avaliação em tempo de execução</h2>
+
+            <p>JavaScript inclui a função <code>eval</code> que consegue executar em tempo de execução comandos da linguagem que estejam escritos em uma string.</p>
+
+            <h1 class="h1-special">Funcional</h1>
+
+            <h2>Funções de primeira classe</h2>
+
+            <p>No JavaScript, as funções são de primeira classe, isto é, são objetos que possuem propriedades e métodos, e podem ser passados como argumentos, serem atribuídos a variáveis ou retornados como qualquer outro objeto.</p>
+
+            <h2>Funções aninhadas</h2>
+
+            <p>Funções 'internas' ou 'aninhadas' são funções definidas dentro de outras funções. São criadas cada vez que a função que as contém (externa) é invocada. Além disso, o escopo da função externa, incluindo constantes, variáveis locais e valores de argumento, se transforma parte do estado interno de cada objeto criado a partir da função interna, mesmo depois que a execução da função interna é concluída.</p>
+
+            <h2>Fechamentos</h2>
+
+            <p>JavaScript permite que funções aninhadas sejam criadas com o escopo léxico no momento de sua definição e possui o operador () para invocá-las em outro momento. Essa combinação de código que pode ser executado fora do escopo no qual foi definido, com seu próprio escopo durante a execução, é denominada, dentro da ciência da computação, fechamento.</p>
+
+            <h1 class="h1-special">Baseada em Protótipos</h1>
+
+            <h2>Protótipos</h2>
+
+            <p>JavaScript usa protótipos em vez de classes para o mecanismo de herança. É possível simular muitas características de orientação a objetos baseada em classes com protótipos.</p>
+            <p><code>
+                function calcIdade(b) {
+                    var hoje = new Date();
+                    var a = hoje.getFullYear();
+                    var idade = a - b;
+                
+                    return idade;
+                }    
+            </code>
+            </p>
+
+            <h2>Funções e métodos</h2>
+
+            <p>Diferente de muitas linguagens orientadas a objetos, não há distinção entre a definição de uma função e a definição de um método no JavaScript. A distinção ocorre durante a chamada da função; a função pode ser chamada como um método. Quando uma função é chamada como método de um objeto, a keyword <code>this</code> da função é associada àquele objeto via tal invocação.</p>
+
+        </article>
+    </main>
+        
+        
+    </section>
+    <script src="../js/global.js"></script>
+</body>
+</html>

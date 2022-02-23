@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript</h1>
+        <nav>
+            <a href="../index.html" class="links">Sua História</a>
+            <a href="characteristics.html" class="links">Características</a>
+            <a href="utilitys.html" class="links">Utilidades</a>
+            <a href="#" class="links">Exemplos</a>
+        </nav>
+    </header> 
+    
+    <main>
+        <article>
+            <h1 class="h1-special">Exemplos de Scripts</h1>
+
+            <h2>Script Simples</h2>
+
+            <div class="code-big" id="code">
+                <code class="italic">// Mostra um alerta de Confirmar e Cancelar.</code>
+                <br>
+                <code>if ( confirm( 'Escolha "Ok" ou "Cancelar" para ver a mensagem correspondente.' ) ) {</code>
+                <br>
+                <code class="indented">alert( 'Você apertou o botão "OK"' );</code>
+                <code class="italic">// mostra um alerta para resposta "OK"</code>
+                <br>
+                <code>} else {</code>
+                <br>
+                <code class="indented">alert( 'Você apertou o botão "Cancelar"' );</code>
+                <code class="italic"> // mostra um alerta para resposta "Cancelar"</code>
+            </div>
+
+            <h2 class="h2-special">Comentários</h2>
+
+            <p>JavaScript permite utilizar comentários de duas formas:</p>
+
+            <ul>
+                <li>Comentários de única linha;</li>
+                <li>Comentários de múltiplas linhas.</li>
+            </ul>
+
+            <p>Exemplos de comentários:</p>
+
+            <div class="code-big">
+                <code class="italic" id="comment">// Este comentário ocupa uma única linha</code>
+                <br>
+                <code class="italic">/* Já este comentário</code>
+                <br>
+                <code class="italic">é mais longo e utiliza</code>
+                <br>
+                <code class="italic">várias linhas */</code>
+            </div>
+
+            <h2 class="h2-special">Funções</h2>
+
+            <p>Criando uma função simples:</p>
+
+            <div class="code-big">
+                <code>function nomeDaFuncao( </code>
+                <code class="italic">/*parâmetros*/</code>
+                <code>) {</code>
+                <br> 
+                <code class="italic indented">/* código que será executado */</code>
+                <br>
+                <code>return</code>
+                <code class="italic">/*Valor retornado*/</code>
+                <code>;</code>
+                <br>
+                <code>}</code>
+            </div>
+
+            <h2 class="h2-special">Hierarquia do objeto</h2>
+
+            <div class="code-big">
+                <code class="italic">//Construtor</code>
+                <br>
+                <code>function Exemplo() {</code>
+                <br>
+                <code class="indented">this.propriedade = 'Isso é uma propriedade.',</code>
+                <br>
+                <code class="indented">this.metodo = function() {</code>
+                <br>
+                <code class="indented">return 'Isso é um metódo';</code>
+                <br>
+                <code class="indented">}</code>
+                <br>
+                <code>}</code>
+            
+            </div>
+
+        </article>
+    </main>
+        
+        
+    </section>
+
+    <script src="../js/global.js"></script>
+</body>
+</html>

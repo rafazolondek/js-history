@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript</h1>
+        <nav>
+            <a href="../index.html" class="links">Sua História</a>
+            <a href="characteristics.html" class="links">Características</a>
+            <a href="#" class="links">Utilidades</a>
+            <a href="examples.html" class="links">Exemplos</a>
+        </nav>
+    </header> 
+    
+    <main>
+        <article>
+            <h1>Uso em Páginas Web</h1>
+
+            <p>O uso primário de JavaScript é escrever funções que são embarcadas ou incluídas em páginas HTML e que interagem com o Modelo de Objeto de Documentos (DOM) da página. Alguns exemplos deste uso são:</p>
+
+            <ul>
+                <li >abrir uma nova janela (dialog) com controle programático sobre seu tamanho, posição e atributos;</li>
+                <li>validar valores de um formulário para garantir que são aceitáveis antes de serem enviados ao servidor;</li>
+                <li>mudar imagens à medida que o mouse se movimenta sobre elas.</li>
+            </ul>
+
+            <p>Um recurso de interface útil baseada em janela, é um tipo de janela secundária da tela principal, ou janela principal, para solicitar ou exibir ao usuário determinadas informações complementares, semelhante a “caixa de diálogo” (dialog).</p>
+
+            <p>Existem dois tipos de associação entre uma janela de diálogo e a janela principal à qual está associada: "forma modal" (showModalDialog), quando a abertura da janela de diálogo flexível sobreposta a janela principal sem a necessidade de recarregar a página principal após o uso do modal, chamada de Lightbox, bloqueando a interação com janela principal a esmaecendo/escurecendo à fundo até que o diálogo seja encerrado; ou "forma não modal", em que pode haver interação concomitante nas duas janelas (principal e diálogo) sem bloqueio da principal, O caso mais comum é do diálogo modal.</p>
+
+            <p>Pelo fato do código JavaScript rodar localmente no navegador do usuário, e não em um servidor remoto, o navegador pode responder a tais ações rapidamente, fazendo uma aplicação mais responsiva. Além disso, o código JavaScript pode detectar ações de usuário que o HTML sozinho não pode, tais como teclas pressionadas individualmente. Aplicações como Gmail tomam vantagem disso: muito da lógica da interface do usuário é escrita em JavaScript, e o JavaScript envia requisições de informação, tais como o conteúdo de um correio eletrônico, para o servidor. A tendência mais ampla de programação em Ajax explora de maneira similar este ponto forte. Uma JavaScript engine (também conhecida como interpretador JavaScript ou uma implementação JavaScript) interpreta código fonte JavaScript e o executa de forma adequada. A primeira implementação JavaScript foi criada por Brendan Eich na Netscape Communications Corporation, para o Navegador Netscape. A implementação, nomeada SpiderMonkey, é implementada em C e vem sendo atualizada para conformar com a edição 3 do ECMA-262. A implementação Rhino, criada primariamente por Norris Boyd (ex-empregado da Netscape; agora no Google) é uma implementação de JavaScript em Java. Rhino, como SpiderMonkey, é conformante com a terceira edição do ECMA-262.</p>
+
+            <p>Por ser o JavaScript a única linguagem que a maioria dos navegadores populares suportam, tem se tornado uma linguagem alvo para muitos frameworks em outras linguagens, a despeito do fato de não ter sido planejado para tal. Não obstante as limitações de desempenho inerente à sua natureza dinâmica, a crescente velocidade das implementações JavaScript tem feito da mesma uma prática linguagem intermediária.</p>
+
+            <h2>Compatibilidade</h2>
+
+            <p>Já que JavaScript roda em ambientes variáveis, uma parte importante do teste e depuração de seu código consiste na verificação de compatibilidade entre navegadores.</p>
+
+            <p>As interfaces DOM para a manipulação de páginas web não são parte do padrão ECMA, ou do próprio JavaScript. Oficialmente, são definidas por um esforço de padronização da W3C; na prática, implementações de navegadores diferem do padrão de uma para as outras, e nem todos navegadores executam JavaScript.</p>
+
+            <p>Para lidar com essas diferenças, programadores JavaScript com frequência tentam escrever códigos que conformam com o padrão comum a maioria dos navegadores; não sendo possível isso, tentam escrever de maneira ad-hoc um código que verifique a presença de certos recursos e que se comporte de maneira adequada caso tais recursos não estejam disponíveis. Em alguns casos, dois navegadores podem ambos implementarem uma funcionalidade com comportamentos diferentes, e programadores podem achar prático detectar qual navegador está rodando e mudar o comportamento de seus scripts para se adequar a isso. Programadores podem também usar bibliotecas ou ferramentas que abstraem tais diferenças entre navegadores.</p>
+
+            <p>Além disso, scripts podem não funcionar para alguns usuários. Por exemplo, um usuário pode:</p>
+
+            <ul>
+                <li>Usar um navegador antigo ou raro com suporte DOM incompleto ou incomum.</li>
+                <li>Usar um navegador de um <strong>PDA</strong> ou telefone móvel que não está apto a executar JavaScript.</li>
+                <li>Ter a execução do JavaScript desabilitada por normas de segurança.</li>
+            </ul>
+
+            <p>Para suportar tais usuários, programadores web tentam criar páginas que sejam robustas a agentes que não suportem o JavaScript da página. Em particular, uma página deve funcionar a despeito das funcionalidades extras que um JavaScript provê. Uma abordagem alternativa que muitos acham preferível é a página se desenvolvida por primeiro a partir de tecnologias básicas que funcionem em todos os navegadores, e então aprimorá-la para os usuários que possuam JavaScript.</p>
+
+            <h2>Acessibilidade</h2>
+
+            <p>Assumindo que o usuário não tenha desabilitado sua execução, pode-se utilizar JavaScript do lado cliente para melhorar a experiência de um usuário com deficiência física ou visual.</p>
+
+            <p>Leitores de tela utilizados por pessoas cegas ou com visão parcial podem detectar a presença de JavaScript e dessa forma acessar e ler o DOM da página depois que seus scripts foram executados. Nestes casos recomenda-se que o HTML seja o mais conciso, navegável e rico semanticamente possível, tendo a página scripts ou não. Não se recomenda que o código JavaScript de uma página seja totalmente dependente do eventos provenientes do mouse já que usuários que não conseguem ou optam por não usar o mouse não estarão aptos a colher os benefícios de tal código. Da mesma forma, embora hyperlinks e webforms possam ser navegados e operados do teclado, JavaScript voltado para acessibilidade não deve requerer um teclado para acessar tais eventos. JavaScript conta com eventos independentes do dispositivo de usuário tais como <code>onfocus</code> e <onchange>onchange</onchange> que são mais recomendados na maioria dos casos.</p>
+
+            <p>Não se recomenda utilizar JavaScript de um jeito que seja confuso ou desorientador para qualquer usuário da internet. Por exemplo, usar JavaScript para alterar ou desabilitar a funcionalidade normal de um navegador, tal como mudar a forma com que o botão direito ou o evento de atualização funcionam, deve ser evitado. Da mesma forma, eventos de interrupção que o usuário pode não estar ciente reduzem a sensação de controle do usuário, assim como scripts inesperados que mudam o conteúdo da página.</p>
+
+            <p>Frequentemente o processo de fazer páginas web complexas tão acessíveis quanto possível se transforma em um problema não trivial, onde certas decisões são assunto de debate e opinião. Entretanto, tecnologias assistivas estão constantemente evoluindo e novas recomendações e informações relevantes vem sendo continuamente publicadas na web.</p>
+
+            <h2>Segurança</h2>
+
+            <p>JavaScript e o DOM representam uma potencialidade para programadores maliciosos escreverem scripts para rodarem em um cliente via web. Navegadores são projetados para conter este risco de duas maneiras. A primeira é que scripts são rodados em uma sandbox na qual só podem executar ações relacionadas à internet, não tarefas de programação de propósito geral como criar arquivos. A segunda é que scripts são limitados pela regra da mesma origem: scripts de um website não têm acesso a informações como nomes de usuário, senhas ou cookies enviados de outro site. A maioria dos bugs em JavaScript relacionados à segurança são brechas de uma das regras.</p>
+
+            <h2>Vulnerabilidades inter-site</h2>
+
+            <p>Um problema comum relacionado à segurança é a escrita de scripts inter-site, ou XSS, uma violação da regra da mesma origem. Tais vulnerabilidades ocorrem quando um atacante está apto a causar em um site alvo, como um site de banco, a inclusão de um script malicioso na página web apresentada à vítima. O script neste exemplo pode então acessar a aplicação do banco com privilégios da vítima, potencialmente revelando informações secretas ou transferindo dinheiro sem a autorização da vítima.</p>
+
+            <p>Alguns navegadores incluem proteção parcial contra ataques XSS refletidos, no qual o atacante fornece uma URL incluindo o script malicioso. No entanto, mesmo usuários destes sites estão vulneráveis a outros ataques XSS, como aqueles onde o código malicioso é guardado em um banco de dados. Apenas o correto desenho de aplicações web no servidor pode prevenir inteiramente ataques XSS.</p>
+
+            <p>Vulnerabilidades XSS também podem ocorrer por causa de erros de implementação por parte de programadores de navegadores.</p>
+
+            <p>Outra vulnerabilidade inter-site é a falsificação de requisição inter-site ou CSRF. No CSRF, o código no site de um atacante faz com que o navegador da vítima tome ações não desejadas pelo usuário em um site alvo (como transferência de dinheiro em um banco). Ela funciona porque, se o site alvo conta apenas com cookies para autenticar requisições, então requisições iniciadas pelo código no site do atacante levarão as mesmas credenciais legítimas de login que as requisições iniciadas pelo usuário. Em geral a solução para CSRF é requerer um valor de autenticação em um campo webform escondido, e não somente nos cookies, para autenticar qualquer requisição que possa ter efeitos duradouros. Verificar o cabeçalho do HTTP Referrer também pode ajudar.</p>
+
+            <p>"Sequestro JavaScript" é um tipo de ataque CSRF no qual uma tag <code>script</code>  no site do atacante explora uma página no lado da vítima que retorna informação privada tal como JSON ou JavaScript. Soluções possíveis incluem requerer um token de autenticação nos parâmetros POST e GET para qualquer resposta que retorne um JSON privado (mesmo que não tenha efeitos colaterais); utilizar POST e nunca GET para requisições que retornem um JSON privado; e modificar a resposta de forma que não possa ser usada via uma tag <code>script</code> (através, por exemplo, de um wrapping de um JSON em um comentário JavaScript).</p>
+
+            <h2>Confiança duvidosa (cliente)</h2>
+
+            <p>Desenvolvedores de aplicativos cliente-servidor devem reconhecer que clientes não confiáveis podem estar sob o controle de invasores. O autor do aplicativo não pode presumir que seu código JavaScript será executado como pretendido (ou de todo) porque qualquer segredo incorporado no código pode ser extraído por um determinado adversário. Algumas implicações são:</p>
+
+            <ul>
+                <li>Os desenvolvedores de sites não podem ocultar perfeitamente como o JavaScript do site funciona porque o código-fonte bruto deve ser enviado ao cliente. O código pode ser ofuscado, mas a ofuscação pode ser projetada por <strong>engenharia reversa</strong>.</li>
+                <li>A validação de formulário JavaScript fornece apenas conveniência para usuários, não segurança. Se um site verificar que o usuário concordou com seus termos de serviço ou filtra caracteres inválidos em campos que devem conter apenas números, ele deve fazê-lo no servidor, não apenas no cliente.</li>
+                <li>Os scripts podem ser desativados seletivamente, portanto, não se pode confiar em JavaScript para impedir operações, como clicar com o botão direito do mouse em uma imagem para salvá-la.</li>
+                <li>É uma prática extremamente ruim incorporar informações confidenciais, como senhas, em JavaScript, porque elas podem ser extraídas por um invasor.</li>
+            </ul>
+
+            <h2>Confiança duvidosa (servidor)</h2>
+
+            <p>Sistemas de gerenciamento de pacotes, como npm e Bower, são populares entre os desenvolvedores de JavaScript. Tais sistemas permitem que um desenvolvedor gerencie facilmente as dependências de seus programas sobre as bibliotecas de programas de outros desenvolvedores. Os desenvolvedores confiam que os mantenedores das bibliotecas os manterão seguros e atualizados, mas nem sempre é esse o caso. Uma vulnerabilidade surgiu por causa dessa confiança cega. Bibliotecas confiáveis ​​podem ter novas versões que causam bugs ou vulnerabilidades em todos os programas que dependem das bibliotecas. Inversamente, uma biblioteca pode ficar sem correção com vulnerabilidades conhecidas na natureza. Em um estudo feito olhando uma amostra de 133 sites, os pesquisadores descobriram que 37% dos sites incluíam uma biblioteca com pelo menos uma vulnerabilidade conhecida. O atraso mediano entre a versão da biblioteca mais antiga usada em cada site e a mais nova versão disponível dessa biblioteca é de 1.177 dias na ALEXA, e o desenvolvimento de algumas bibliotecas ainda em uso ativo cessou anos atrás. Outra possibilidade é que o mantenedor de uma biblioteca pode remover a biblioteca completamente. Isso ocorreu em março de 2016, quando o Azer Koçulu removeu seu repositório do npm. Isso fez com que todas as dezenas de milhares de programas e sites, dependendo de suas bibliotecas, quebrassem.</p>
+
+            <h2>Erros de codificação do navegador e do plug-in</h2>
+
+            <p>O JavaScript fornece uma interface para uma ampla gama de recursos do navegador, alguns dos quais podem ter falhas, como estouro de buffer. Essas falhas podem permitir que invasores escrevam scripts que executariam qualquer código que desejassem no sistema do usuário. Este código não é de forma alguma limitado a outro aplicativo JavaScript. Por exemplo, uma exploração de buffer overrun pode permitir que um invasor obtenha acesso à API do sistema operacional com privilégios de superusuário.</p>
+
+            <p>Essas falhas afetaram os principais navegadores, incluindo <strong>Firefox</strong>, <strong>Internet Explorer</strong> e <strong>Safari</strong>.</p>
+
+            <p>Plugins, como players de vídeo, Adobe Flash e a ampla gama de controles ActiveX habilitados por padrão no Microsoft Internet Explorer, também podem ter falhas exploráveis via JavaScript (tais falhas foram exploradas no passado).</p>
+
+            <p>No Windows Vista, a Microsoft tentou conter os riscos de erros, como estouro de buffer, executando o processo do Internet Explorer com privilégios limitados. O <strong>Google Chrome</strong> confina seus renderizadores de página à sua própria "sandbox".</p>
+
+            <h2>Erros de implementação da Sandbox</h2>
+
+            <p>Os navegadores da Web são capazes de executar o JavaScript fora do sandbox, com os privilégios necessários para, por exemplo, criar ou excluir arquivos. Naturalmente, esses privilégios não devem ser concedidos ao código da Web.</p>
+
+            <p>A concessão incorreta de privilégios ao JavaScript da Web desempenhou um papel importante nas vulnerabilidades do Internet Explorer e do Firefox. No Windows XP Service Pack 2, a Microsoft rebaixou os privilégios do JScript no Internet Explorer.</p>
+
+            <p>O Microsoft Windows permite que os arquivos de origem JavaScript no disco rígido de um computador sejam lançados como programas de uso geral e sem área de segurança. Isso torna o JavaScript (como o VBScript) um vetor teoricamente viável para um cavalo de Tróia, embora cavalos de Tróia em JavaScript sejam incomuns na prática.</p>
+
+            <h2>Vulnerabilidades de Hardware</h2>
+
+            <p>Em 2015, uma implementação de prova de conceito baseada em JavaScript de um ataque de desajustes foi descrita em um artigo por pesquisadores de segurança.</p>
+
+            <p>Em 2017, foi demonstrado um ataque baseado em JavaScript via navegador que poderia ignorar o ASLR. É chamado de "ASLR⊕Cache" ou AnC.</p>
+
+        </article>
+    </main>
+        
+        
+    </section>
+    <script src="../js/global.js"></script>
+</body>
+</html>
