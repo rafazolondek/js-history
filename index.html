@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
+    
 </head>
 <body>
     <header>
@@ -21,11 +23,23 @@
     </header> 
     
     <main>
+        
         <article>
-            <h1 id="h1-arrow" onclick="appear()">Sua História <img src="images/caret-down.svg" alt="Flecha" id="arrow"></h1>
+            <h1 id="h1-arrow">Sua História</h1>
                 
 
-            <p id="hidden"><!--<strong>JavaScript</strong> (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web--></p>
+            <p><strong>JavaScript</strong> (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web</p>
+
+            <div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+                <img src="./images/LOGO.png">
+                <img src="./images/netscape.png">
+                <img src="./images/ecma.jpg">
+                <img src="./images/evolution.png">
+                <!-- <img src="2-lo.jpg">
+                <img src="9-lo.jpg">
+                <img src="6-lo.jpg">
+                <img src="5-lo.jpg"> -->
+              </div>
 
             <h2>Início no Netscape</h2>
 
@@ -38,10 +52,14 @@
             <p>Há um equívoco comum de que o JavaScript foi influenciado por uma linguagem de script de página da Web desenvolvida pelo Nombas chamada Cmm (não confundir com o C posteriormente - criado em 1997). Brendan Eich, no entanto, nunca tinha ouvido falar de Cmm antes de criar o LiveScript. Os Nombas lançaram seus scripts de página da Web incorporados no Netscape, embora o script de página da Web não fosse um conceito novo, conforme mostrado pelo navegador da Web ViolaWWW. Nombas mais tarde passou a oferecer JavaScript em vez de Cmm em seu produto ScriptEase e fazia parte do grupo TC39 que padronizava o ECMAScript.</p>
         </article>
     </main>
-        
-        
-    </section>z
-    <script src="js/global.js"></script>
-    <script src="js/index.js"></script>
+
+    <footer>
+        <h4 class="text-footer">Site criado por Adrian Rafael Zolondek Ferreira</hh4>
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="fotorama-4.6.4/fotorama.js"></script>
+    <!-- <base href="http://s.fotorama.io/okonechnikov/"> -->
+    <!-- <script src="js/global.js"></script>
+    <script src="js/index.js"></script> -->
 </body>
 </html>
