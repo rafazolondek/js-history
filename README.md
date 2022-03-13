@@ -1,4 +1,5 @@
 # História do JavaScript
 Projeto de um blog contando a história do JavaScript e suas funcionalidades hoje em dia. 
 
-Inicialmente o projeto foi feito basicamente com HTML e CSS e algumas funcionalidades com JS, ainda quero atualizar para que tenha muito mais funcionalidades e interações.
+Projeto em desenvolvimento em aula na faculdade de Engenharia de Software, onde começamos a usar algumas funcionalidades do jQuery, como o Fotorama, adicionado por último.
+
